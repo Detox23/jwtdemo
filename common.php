@@ -11,14 +11,11 @@ function getToken() {
 
 function createTokenObject() {
     return array(
-        # Issuer
-        "iss" => "http://demo.sjoerdlangkemper.nl/",
-
         # Issued at
         "iat" => time(),
 
         # Expire
-        "exp" => time() + 120,
+        "exp" => time() + 3600,
 
         "data" => [
             "hello" => "world"
